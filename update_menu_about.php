@@ -46,17 +46,13 @@ include ('leftside.php');
                     $sql = "SELECT * FROM tb_menu_about where about_id='".$id."'";
                        $result = $con->query ($sql);
                        $row=$result->fetch_assoc();
-                      // var_dump($row);
-                      // exit();
                     }
                 ?>
-
-
-                <form role="form" action="update_aboutmenucheck.php" class="create-account-form" method="POST"
+                <form role="form" action="update_aboutmenucheck" class="create-account-form" method="POST"
                     enctype="multipart/form-data">
                     <div class="box-body">
                         <input type="hidden" name="about_id" value=<?php echo $row['about_id'] ?>>
-                        <?php if($id!=''){?>
+                        <?php if($id!='') {?>
                         <?php } ?>
                         <div class="box-body">
                             <div class="col-sm-6">
@@ -67,10 +63,9 @@ include ('leftside.php');
 
                             <div class="col-sm-10">
                                 <label>Details</label>
-                                <textarea id="editor" name="about_details" class="form-control" rows="5"><?php echo $row['about_details'];?>
+                                <textarea id="editor" name="about_details" class="form-control"><?php echo $row['about_details'];?>
                  </textarea>
                             </div>
-
                             <div class="col-sm-6">
                                 <br><label for="exampleInputFile">Edit image</label>
                                 <br><img src="images/<?php echo $row['about_banner'];?>" width="150px"><br>
@@ -79,10 +74,9 @@ include ('leftside.php');
                                 <p> This is a old picture</p>
                                 <input type="hidden" name="oldfile" value="<?= $row['about_banner']; ?>">
                                 <input id="imgEdit" type="file" name="about_banner2">
-
-
                                 <p class="help-block">Choose file</p>
                                 <button type="submit" name="submitcreate" class="btn btn-primary">Edit</button>
+                                
                             </div>
 
                             <div class="col-sm-6">

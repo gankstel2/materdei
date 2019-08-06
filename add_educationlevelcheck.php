@@ -22,7 +22,7 @@
 
     $message1 = 'ได้ทำการเพิ่มข้อมูลเรียบร้อยแล้ว';
     echo "<script type='text/javascript'>alert('$message1');
-    window.location='add_educationlevel.php';
+    window.location='materdei-backend/add_educationlevel.php';
     </script>";
 
 // 4.ปิดการเชื่อมต่อ

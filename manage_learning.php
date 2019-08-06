@@ -57,9 +57,9 @@ include ('leftside.php');
                                 <tr>
                                     <td><?php echo $i++ ?></td>
                                     <td><?php echo $row['education_level']?></td>
-                                    <td><a href="update_learning.php?id=<?php  echo $row['learning_id'];  ?>"><button
+                                    <td><a href="materdei-backend/update_learning.php?id=<?php  echo $row['learning_id'];  ?>"><button
                                                 type="button" class="btn btn-primary">Edit</button></a></td>
-                                    <td><a href="deletelearning.php?id=<?php  echo $row['learning_id'];  ?>"><button
+                                    <td><a href="materdei-backend/deletelearning.php?id=<?php  echo $row['learning_id'];  ?>"><button
                                                 type="button" class="btn btn-danger">Delete</button></a>
                                     </td>
                                 </tr>

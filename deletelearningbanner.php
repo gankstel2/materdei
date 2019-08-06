@@ -20,7 +20,7 @@ $query = mysqli_query($con, $sql);
 
 $message1 = 'ได้ทำการลบข้อมูลเรียบร้อยแล้ว';
  echo "<script type='text/javascript'>alert('$message1');
- window.location='manage_learningbanner.php';
+ window.location='materdei-backend/manage_learningbanner.php';
  </script>";
 // 4.ปิดการเชื่อมต่อ
 mysqli_close ($con);

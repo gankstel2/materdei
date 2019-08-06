@@ -59,7 +59,7 @@ $sql="UPDATE tb_home_about SET
 	if ($query) {
 		$message1 = 'ได้ทำการบันทึกข้อมูลเรียบร้อยแล้ว';
 		echo "<script type='text/javascript'>alert('$message1');
-		window.location='manage_about.php';
+		window.location='materdei-backend/manage_about.php';
 		</script>";
 	}
 

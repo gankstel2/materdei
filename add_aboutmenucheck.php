@@ -27,6 +27,7 @@ include('connection.php');
  $file_desktop = $_FILES['about_banner'];
  $file_mobile= $_FILES['about_mobanner'] ;
 
+ 
     if ($file_desktop['name'] !=='') {
         // PATH
         $path="images/";
@@ -57,14 +58,16 @@ include('connection.php');
     $checkMobile = $file_mobile['name'] !== '' ? $newnameMobile : '' ;
 
 
-	 $sql = "INSERT INTO tb_menu_about (about_headline,about_details,about_banner,about_mobanner)
-	 values ('$about_headline','$about_details','$checkDesktop','$checkMobile')";
-    $query = mysqli_query($con, $sql);
+	 $sql = "INSERT INTO tb_menu_about (about_id,about_headline,about_details,about_banner,about_mobanner)
+     VALUES (null,'$about_headline','$about_details','$checkDesktop','$checkMobile')";
+    $query = mysqli_query($con, $sql)or die(mysqli_error($con));
+ 
+
 
 	if ($query) {
 		$message1 = 'ได้ทำการบันทึกข้อมูลเรียบร้อยแล้ว';
 		echo "<script type='text/javascript'>alert('$message1');
-		window.location='add_menu_about.php';
+		window.location='materdei-backend/add_menu_about.php';
 		</script>";
 	} else {
 		echo "Fuck";

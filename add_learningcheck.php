@@ -69,6 +69,9 @@ $valid_formats = array("jpg", "png", "gif", "bmp","jpeg");
 
     $imagesGallery= implode (", ", $array);
 
+    var_dump($imagesGallery);
+    exit();
+
 	 $sql = "INSERT INTO tb_menu_learning (education_id,learning_activity,field_trip,
 		 				social_work,order_subject,elective_subject,floor_activity,learning_img)
 	 values ('$education_id','$learning_activity','$field_trip',
@@ -78,7 +81,7 @@ $valid_formats = array("jpg", "png", "gif", "bmp","jpeg");
 	
     $message1 = 'ได้ทำการบันทึกข้อมูลเรียบร้อยแล้ว';
     echo "<script type='text/javascript'>alert('$message1');
-    window.location='add_learning.php';
+    window.location='materdei-backend/add_learning.php';
     </script>";
 
 

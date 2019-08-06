@@ -25,7 +25,7 @@
                   }
               if ($_SESSION["status"]=="User"){ 
 
-                    Header("Location: add_menu.php");
+                    Header("Location: materdei-backend/add_menu.php");
                   }
               }else{
                 echo "<script>";
@@ -36,7 +36,7 @@
               }
     }else{
 
-         Header("Location: login.php"); //user & password incorrect back to login again
+         Header("Location: materdei-backend/login.php"); //user & password incorrect back to login again
 
     }
                             

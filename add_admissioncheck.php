@@ -58,7 +58,7 @@
 	if ($query) {
 		$message1 = 'ได้ทำการบันทึกข้อมูลเรียบร้อยแล้ว';
 		echo "<script type='text/javascript'>alert('$message1');
-		window.location='add_admission.php';
+		window.location='materdei-backend/add_admission.php';
 		</script>";
 	} else {
 		echo "Fuck";

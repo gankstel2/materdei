@@ -16,6 +16,7 @@
 	$file_desktop = $_FILES['about_banner2'];
 	$file_mobile= $_FILES['about_mobanner2'] ;
 
+
 			// if ($size === 'desktop') {
 			// 	$upload = $_FILES['admission_img'] ? $_FILES['admission_img'] : '' ;
 			// }else {
@@ -69,15 +70,17 @@
       about_banner='$checkDesktop',
       about_mobanner='$checkMobile'
       WHERE about_id='$about_id'";
-    	$query = mysqli_query($con, $sql);
+		$query = mysqli_query($con, $sql);
+		// var_dump($sql);
+		// exit();
 
 	if ($query) {
 		$message1 = 'ได้ทำการบันทึกข้อมูลเรียบร้อยแล้ว';
 		echo "<script type='text/javascript'>alert('$message1');
-		window.location='manage_menu_about.php';
+		window.location='materdei-backend/manage_menu_about.php';
 		</script>";
 	} else {
-		echo "Fuck";
+		echo "Error";
 		exit();
 	}
 

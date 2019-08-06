@@ -26,7 +26,7 @@ $status = $_POST['status'] ;
 
     $message1 = 'ได้ทำการบันทึกข้อมูลเรียบร้อยแล้ว';
     echo "<script type='text/javascript'>alert('$message1');
-    window.location='login.php';
+    window.location='materdei-backend/login.php';
     </script>";
 
 // 4.ปิดการเชื่อมต่อ

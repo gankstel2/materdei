@@ -46,10 +46,10 @@ include('connection.php');
 	$query = mysqli_query($con, $sql);
 
 
-	// $message1 = 'ได้ทำการบันทึกข้อมูลเรียบร้อยแล้ว';
- // echo "<script type='text/javascript'>alert('$message1');
- // window.location='add_serviam.php';
- // </script>";
+	$message1 = 'ได้ทำการบันทึกข้อมูลเรียบร้อยแล้ว';
+ echo "<script type='text/javascript'>alert('$message1');
+ window.location='materdei-backend/add_serviam.php';
+ </script>";
 
 
 // 4.ปิดการเชื่อมต่อ

@@ -24,6 +24,6 @@ mysqli_close ($con);
 
 
 	ลบข้อมูลเรียบร้อยแล้ว
-	<a href="manage_slide.php">กลับหน้าแรก</a>
+	<a href="materdei-backend/manage_slide.php">กลับหน้าแรก</a>
 </body>
 </html>

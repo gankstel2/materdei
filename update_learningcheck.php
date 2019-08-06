@@ -86,7 +86,7 @@ $valid_formats = array("jpg", "png", "gif", "bmp","jpeg");
 	if ($query) {
 		$message1 = 'ได้ทำการบันทึกข้อมูลเรียบร้อยแล้ว';
 		echo "<script type='text/javascript'>alert('$message1');
-		window.location='manage_learning.php';
+		window.location='materdei-backend/manage_learning.php';
 		</script>";
 	} else {
 		echo "Fuck";

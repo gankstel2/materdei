@@ -53,7 +53,7 @@ require_once('connection.php');
 		if ($query) {
 			$message1 = 'ได้ทำการบันทึกข้อมูลเรียบร้อยแล้ว';
 			echo "<script type='text/javascript'>alert('$message1');
-			window.location='manage_slogan.php';
+			window.location='materdei-backend/manage_slogan.php';
 			</script>";
 		}
 

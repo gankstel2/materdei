@@ -51,8 +51,7 @@ include ('leftside.php');
 
                                             <div class="col-sm-10">
                                                 <label>Details</label>
-                                                <textarea type="text" id="editor" name="about_details"
-                                                     class="form-control"></textarea>
+                                                <textarea type="text" id="editor" name="about_details" class="form-control"></textarea>
                                             </div>
 
                                             <div class="col-sm-6">
